@@ -1,1 +1,30 @@
 <p>template-syntax works!</p>
+<h3>Interpolation Directive</h3>
+<p>{{200}}</p>
+<p>Data Binding: {{valueNum}}</p>
+<p>{{(200.3498645).toLocaleString("de-DE")}}</p>
+<p>{{"hello"}}</p>
+<p>{{"hello".toUpperCase()}}</p>
+<p>{{value1}}</p>
+<p>{{value1.toUpperCase()}}</p>
+<button [disabled]="isDisabled">Click</button>
+
+<h4>Styles</h4>
+<p style="background-color: aqua;">asdaSD</p>
+<p [style.color]="'#ff33a4'">asdasdasd</p>
+<p [ngStyle]="{
+    'background-color': 'red',
+    'color': 'white'
+}">asdasdasd</p>
+
+<h2 [ngClass]="{
+    alert: true,
+    'alert-info': isDisabled,
+    'alert-error': !isDisabled
+}">Status</h2>
+<button (click)="isDisabled = !isDisabled">Status umschalten</button>
+<ul>
+    @for (item of liste; track $index) {
+        <li>{{item}}</li>
+    }
+</ul>

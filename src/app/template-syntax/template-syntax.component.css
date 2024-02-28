@@ -1,0 +1,16 @@
+.alert {
+    padding: 10px;
+    border: 1px solid;
+}
+
+.alert-info{
+    color: green;
+    background-color: lightcyan;
+    border-color: green;
+}
+
+.alert-error {
+    color: darkred;
+    border-color: darkred;
+    background-color: lightpink;
+}

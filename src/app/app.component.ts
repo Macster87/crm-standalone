@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {TemplateSyntaxComponent} from './template-syntax/template-syntax.component'
+import { TemplateSyntaxComponent } from './template-syntax/template-syntax.component';
 
 @Component({
   selector: 'app-root',
