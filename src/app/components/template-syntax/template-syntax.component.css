@@ -1,5 +1,6 @@
 .alert {
     padding: 10px;
+    border-color: black;
     border: 1px solid;
 }
 

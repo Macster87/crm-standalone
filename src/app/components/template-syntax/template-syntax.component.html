@@ -21,10 +21,21 @@
     alert: true,
     'alert-info': isDisabled,
     'alert-error': !isDisabled
-}">Status</h2>
+}">Status @if (isDisabled) {Aktiv} @else {Inaktiv}</h2>
 <button (click)="isDisabled = !isDisabled">Status umschalten</button>
+<p>10 Zufällige Nummern <button (click)="liste = randomNumbersBetween(1,100)">Generieren</button></p>
+
 <ul>
     @for (item of liste; track $index) {
         <li>{{item}}</li>
     }
 </ul>
+
+<p [innerHTML]="value1 | uppercase"></p>
+
+<pre>{{customer | json}}</pre>
+
+<form (ngSubmit)="formSubmitEvent($event)">
+    <input type="text" name="name" [(ngModel)]="value1">
+    <button>Submit</button>
+</form>
